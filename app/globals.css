@@ -2,26 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.container {
+	@apply mx-auto max-w-sm  md:max-w-[768px] lg:max-w-[1024px] 2xl:max-w-[1536px] sm:px-16 px-6;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.section {
+	@apply sm:mt-20 mt-8;
 }
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	background: #111111;
+	overflow: hidden;
+}
+
+#blob {
+	position: absolute;
+	height: 400px;
+	aspect-ratio: 1;
+	background: white;
+	border-radius: 50%;
+	left: 50%;
+	top: 50%;
+	translate: -50% -50%;
+	background: linear-gradient(to right, aquamarine, mediumpurple);
+	animation: rotate 20s infinite;
+}
+
+#blur {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	z-index: 2;
+	backdrop-filter: blur(200px);
+}
+
+@keyframes rotate {
+	from {
+		rotate: 0deg;
+	}
+	50% {
+		scale: 1 1.5;
+	}
+	to {
+		rotate: 360deg;
+	}
 }
