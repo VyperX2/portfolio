@@ -34,14 +34,17 @@ body {
 
 #blob {
 	position: absolute;
-	height: 450px;
+	height: 400px;
 	aspect-ratio: 1;
 	background: white;
 	border-radius: 50%;
 	left: 50%;
 	top: 50%;
 	translate: -50% -50%;
-	background: linear-gradient(to right, var(--secondary), var(--background));
+	/* background: linear-gradient(to right, #667eea, #764ba2); */
+	/* background: linear-gradient(to right, #ffeb3b, #9c27b0); */
+	/* background: linear-gradient(to right, #1a237e, #0d47a1); */
+	background: linear-gradient(to right, #9c27b0, #673ab7);
 	animation: rotate 20s infinite;
 	z-index: -2;
 }
