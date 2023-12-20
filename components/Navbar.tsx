@@ -57,7 +57,7 @@ const Navbar = () => {
 				{navItems.map((item) => (
 					<a
 						key={item.href}
-						className="hover:opacity-60 hover:scale-110  transition-all"
+						className="hover:opacity-60 hover:scale-110  transition-all ease-in"
 						href={item.href}
 					>
 						{" "}
@@ -67,7 +67,7 @@ const Navbar = () => {
 				{theme === "dark" ? (
 					<button onClick={() => setTheme("light")}>
 						<svg
-							className="hover:opacity-60 hover:scale-110  transition-all"
+							className="hover:opacity-60 hover:scale-110  transition-all ease-in"
 							xmlns="http://www.w3.org/2000/svg"
 							width="24px"
 							height="24px"
@@ -80,7 +80,10 @@ const Navbar = () => {
 						</svg>
 					</button>
 				) : (
-					<button onClick={() => setTheme("dark")}>
+					<button
+						className="hover:opacity-60 hover:scale-110  transition-all ease-in"
+						onClick={() => setTheme("dark")}
+					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="24px"
