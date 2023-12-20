@@ -1,6 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Average+Sans&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	:root {
+		--text: #100e1b;
+		--background: #ecebf4;
+		--primary: #3b3168;
+		--secondary: #9b91cf;
+		--accent: #5343a3;
+	}
+	.dark {
+		--text: #e6e4f1;
+		--background: #0c0b14;
+		--primary: #a197ce;
+		--secondary: #3a306e;
+		--accent: #6c5cbc;
+	}
+}
 
 .container {
 	@apply mx-auto max-w-sm  md:max-w-[768px] lg:max-w-[1024px] 2xl:max-w-[1536px] sm:px-16 px-6;
@@ -23,7 +41,7 @@ body {
 	left: 50%;
 	top: 50%;
 	translate: -50% -50%;
-	background: linear-gradient(to right, aquamarine, mediumpurple);
+	background: linear-gradient(to right, var(--primary), var(--accent));
 	animation: rotate 20s infinite;
 }
 
