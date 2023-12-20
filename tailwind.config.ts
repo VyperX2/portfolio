@@ -26,8 +26,8 @@ const config: Config = {
 				"5xl": "4.210rem",
 			},
 			fontFamily: {
-				heading: "Average Sans",
-				body: "Average Sans",
+				heading: "Montserrat",
+				body: "Montserrat",
 			},
 			fontWeight: {
 				normal: "400",

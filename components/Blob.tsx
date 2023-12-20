@@ -12,16 +12,16 @@ const Blob = () => {
 					top: `${clientY}px`,
 					left: `${clientX}px`,
 				},
-				{ duration: 3000, fill: "forwards" }
+				{ duration: 1500, fill: "forwards" }
 			);
 		};
 	}, []);
 
 	return (
-		<>
+		<div className=" hidden lg:block">
 			<div id="blob"></div>
 			<div id="blur"></div>
-		</>
+		</div>
 	);
 };
 
