@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 import Blob from "@/components/Blob";
 import Navbar from "@/components/Navbar";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 export const metadata: Metadata = {
 	title: "Mateen",
@@ -15,10 +16,17 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className="font-heading dark bg-background text-text py-6">
-				<Blob />
-				<Navbar />
-				{children}
+			<body className="font-heading bg-background text-text py-6">
+				<ThemeProvider
+					attribute="class"
+					defaultTheme="system"
+					enableSystem
+					disableTransitionOnChange
+				>
+					<Blob />
+					<Navbar />
+					{children}
+				</ThemeProvider>
 			</body>
 		</html>
 	);
