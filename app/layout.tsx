@@ -16,14 +16,14 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className="font-heading bg-background text-text py-6">
+			<body className="font-heading bg-background text-text">
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"
 					enableSystem
 					disableTransitionOnChange
 				>
-					<Blob />
+					<Blob /> 
 					<Navbar />
 					{children}
 				</ThemeProvider>

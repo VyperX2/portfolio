@@ -1,12 +1,8 @@
+import MobileMenu from "./MobileMenu";
 import ThemeToggle from "./ThemeToggle";
-
+import { navItems } from "@/utils/constants";
 const Navbar = () => {
-	const navItems = [
-		{ title: "Home", href: "#home" },
-		{ title: "About", href: "#about" },
-		{ title: "Projects", href: "#projects" },
-		{ title: "Contact", href: "#contact" },
-	];
+
 	return (
 		<nav className="container flex justify-between items-center text-primary font-semibold fixed left-0 right-0 top-0 pt-6 bg-transparent backdrop:blur-sm overflow-hidden">
 			<a
@@ -32,24 +28,7 @@ const Navbar = () => {
 			</a>
 
 			{/* MOBILE VIEW */}
-			<div>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="48px"
-					height="48px"
-					viewBox="0 0 24 24"
-					className="md:hidden"
-				>
-					<path
-						fill="none"
-						stroke="var(--primary)"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						stroke-width="1.5"
-						d="M4.5 6.5h15M4.5 12h15m-15 5.5h15"
-					></path>
-				</svg>
-			</div>
+			<MobileMenu />
 
 			{/* DESKTOP VIEW */}
 			<div className="md:flex space-x-8 cursor-pointer hidden">
