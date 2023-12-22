@@ -23,7 +23,7 @@ export default function RootLayout({
 					enableSystem
 					disableTransitionOnChange
 				>
-					<Blob /> 
+					<Blob />
 					<Navbar />
 					{children}
 				</ThemeProvider>
