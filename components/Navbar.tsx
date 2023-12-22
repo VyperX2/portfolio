@@ -5,24 +5,22 @@ import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
+import { Anim1 } from "@/animations/animation";
 
 const Navbar = () => {
-	let nameContainer = useRef(null);
+	let container = useRef(null);
 	useGSAP(
 		() => {
-			const tl = gsap.timeline();
-			tl.from("#name", {
-				opacity: 0,
-				y: 100,
-				duration: 0.8,
-				delay: 0.3,
-			}).from("#logo", { opacity: 0, y: 100 });
+			Anim1();
 		},
-		{ scope: nameContainer }
+		{ scope: container }
 	);
 
 	return (
-		<nav className="container flex justify-between items-center text-primary font-semibold fixed left-0 right-0 top-0 pt-6 bg-transparent backdrop:blur-sm overflow-hidden">
+		<nav
+			ref={container}
+			className="container flex justify-between items-center text-primary font-semibold fixed left-0 right-0 top-0 pt-6 bg-transparent backdrop:blur-sm overflow-hidden"
+		>
 			{
 				// GITHUB LOGO
 				/* <a
@@ -42,11 +40,7 @@ const Navbar = () => {
 				</svg>
 			</a> */
 			}
-			<div
-				ref={nameContainer}
-				id="nameContainer"
-				className="flex items-center gap-2 noselect"
-			>
+			<div className="flex items-center gap-2 noselect anim1">
 				<div id="logo">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +64,7 @@ const Navbar = () => {
 			</div>
 
 			{/* DESKTOP VIEW */}
-			<div className="md:flex space-x-8 cursor-pointer hidden">
+			<div className="md:flex space-x-8 cursor-pointer hidden anim1">
 				{navItems.map((item) => (
 					<a
 						key={item.href}
@@ -91,6 +85,7 @@ const Navbar = () => {
 							width="32px"
 							height="32px"
 							viewBox="0 0 24 24"
+              className="anim1"
 						>
 							<path
 								fill="none"
