@@ -1,20 +1,15 @@
-import MobileMenu from "./MobileMenu";
 import ThemeToggle from "./ThemeToggle";
 import { navItems } from "@/utils/constants";
+import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 const Navbar = () => {
 	return (
 		<nav className="container flex justify-between items-center text-primary font-semibold fixed left-0 right-0 top-0 pt-6 bg-transparent backdrop:blur-sm overflow-hidden">
 			<a
-				className="cursor-pointer h-12 w-12 block"
+				className="cursor-pointer md:h-12 md:w-12 h-10 w-10 block"
 				href="https://github.com/VyperX2"
 				target="_blank"
 			>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="48px"
-					height="48px"
-					viewBox="0 0 128 128"
-				>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
 					<g fill="currentColor">
 						<path
 							fillRule="evenodd"
@@ -25,9 +20,6 @@ const Navbar = () => {
 					</g>
 				</svg>
 			</a>
-
-			{/* MOBILE VIEW */}
-			<MobileMenu />
 
 			{/* DESKTOP VIEW */}
 			<div className="md:flex space-x-8 cursor-pointer hidden">
@@ -42,6 +34,42 @@ const Navbar = () => {
 					</a>
 				))}
 				<ThemeToggle />
+			</div>
+			<div className=" md:hidden flex space-x-2">
+				<Sheet>
+					<SheetTrigger>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="32px"
+							height="32px"
+							viewBox="0 0 24 24"
+						>
+							<path
+								fill="none"
+								stroke="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="1.5"
+								d="M4.5 6.5h15M4.5 12h15m-15 5.5h15"
+							></path>
+						</svg>
+					</SheetTrigger>
+					<SheetContent className="border-l-primary">
+						<nav className="flex flex-col gap-y-6">
+							{navItems.map((item) => (
+								<a
+									key={item.href}
+									className="hover:opacity-60 hover:scale-110 text-lg font-semibold text-primary transition-all ease-in"
+									href={item.href}
+								>
+									{" "}
+									{item.title}{" "}
+								</a>
+							))}
+							<ThemeToggle />
+						</nav>
+					</SheetContent>
+				</Sheet>
 			</div>
 		</nav>
 	);
