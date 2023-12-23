@@ -16,14 +16,13 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className="font-heading bg-background text-text">
+			<body className="font-heading bg-background overflow-hidden ">
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"
 					enableSystem
 					disableTransitionOnChange
 				>
-					<Blob />
 					<Navbar />
 					{children}
 				</ThemeProvider>

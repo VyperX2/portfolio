@@ -58,10 +58,6 @@
 .section {
 	@apply sm:mt-20 mt-8;
 }
-body {
-	background: #111111;
-	overflow: hidden;
-}
 
 #blob {
 	position: absolute;

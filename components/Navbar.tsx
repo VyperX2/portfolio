@@ -85,7 +85,7 @@ const Navbar = () => {
 							width="32px"
 							height="32px"
 							viewBox="0 0 24 24"
-              className="anim1"
+							className="anim1"
 						>
 							<path
 								fill="none"
