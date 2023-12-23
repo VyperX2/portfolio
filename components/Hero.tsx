@@ -7,7 +7,9 @@ const Hero = () => {
 	const container = useRef(null);
 	const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	useEffect(() => {
-		document.querySelector("h1")!.onmouseover = (event: any) => {
+		const h1s = document.querySelectorAll("h1")!;
+
+		const handleMouseOver = (event: any) => {
 			let iterations = 0;
 
 			const interval = setInterval(() => {
@@ -26,9 +28,13 @@ const Hero = () => {
 					clearInterval(interval);
 				}
 
-				iterations += 1/3;
+				iterations += 1 / 3;
 			}, 30);
 		};
+
+		h1s.forEach((h1) => {
+			h1.addEventListener("mouseover", handleMouseOver);
+		});
 	}, []);
 
 	useGSAP(
@@ -52,12 +58,12 @@ const Hero = () => {
 				>
 					MATEEN
 				</h1>
-				{/* <h1
+				<h1
 					data-value="AHMED"
 					className="2xl:text-5xl lg:text-4xl md:text-4xl text-3xl text-primary font-semibold inline-block anim2"
 				>
 					AHMED
-				</h1> */}
+				</h1>
 				<p className="text-muted-foreground font-semibold anim2 leading-snug">
 					I am a passionate front end web developer{" "}
 					<br className="md:block hidden" />I will help turn your ideas into
