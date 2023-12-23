@@ -61,7 +61,7 @@
 
 #blob {
 	position: absolute;
-	height: 400px;
+	height: 200px;
 	aspect-ratio: 1;
 	background: white;
 	border-radius: 50%;
@@ -116,4 +116,8 @@
 	-ms-user-select: none; /* Internet Explorer/Edge */
 	user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
+}
+
+h1 {
+	font-family: monospace;
 }

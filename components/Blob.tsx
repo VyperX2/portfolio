@@ -18,10 +18,10 @@ const Blob = () => {
 	}, []);
 
 	return (
-		<div className=" hidden lg:block">
+		<>
 			<div id="blob"></div>
 			<div id="blur"></div>
-		</div>
+		</>
 	);
 };
 
