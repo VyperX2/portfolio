@@ -4,7 +4,7 @@ import AnimatedCursor from "react-animated-cursor";
 // TODO FIX BLOB COMPONENT
 export default function Home() {
 	return (
-		<main className="container flex flex-col mt-20 overflow-hidden">
+		<main className="container flex flex-col mt-20 overflow-hidden ">
 			{/* <Blob /> */}
 			<Hero />
 			<AnimatedCursor
@@ -13,7 +13,7 @@ export default function Home() {
 				innerScale={1}
 				outerScale={2}
 				outerAlpha={0}
-				hasBlendMode={true}
+				// hasBlendMode={true}
 				innerStyle={{
 					backgroundColor: "rgb(124, 58 , 237)",
 				}}
