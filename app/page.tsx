@@ -13,7 +13,7 @@ export default function Home() {
 				innerScale={1}
 				outerScale={2}
 				outerAlpha={0}
-				// hasBlendMode={true}
+				// hasBlendMode={true} The library had an issue where the type wasnt described so i added it and it runs okay locally but not when deployed so i will later on submit a pull request to the github
 				innerStyle={{
 					backgroundColor: "rgb(124, 58 , 237)",
 				}}

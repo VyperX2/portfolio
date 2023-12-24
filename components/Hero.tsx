@@ -45,12 +45,14 @@ const Hero = () => {
 			let mousePosX = -1 + (xValue / windowWidth) * 2;
 			let mousePosY = -(1 - (yValue / windowHeight) * 2);
 
-			document.getElementById("intro")!.animate(
-				{
-					transform: `translate(${mousePosX * 10}% , ${mousePosY * 10}%)`,
-				},
-				{ duration: 200, fill: "forwards" }
-			);
+			if (windowWidth > 425) {
+				document.querySelector("#intro")!.animate(
+					{
+						transform: `translate(${mousePosX * 10}% , ${mousePosY * 10}%)`,
+					},
+					{ duration: 200, fill: "forwards" }
+				);
+			}
 		};
 	}, []);
 
@@ -68,7 +70,7 @@ const Hero = () => {
 			<div
 				ref={container}
 				id="intro"
-				className=" text-center leading-none absolute"
+				className=" text-center leading-none absolute "
 			>
 				<h3 className="2xl:text-4xl lg:text-2xl text-2xl text-muted-foreground font-semibold anim2">
 					Hi, My Name is
