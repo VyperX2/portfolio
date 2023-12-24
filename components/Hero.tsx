@@ -36,7 +36,7 @@ const Hero = () => {
 			h1.addEventListener("mouseover", handleMouseOver);
 		});
 
-		window.onmousemove = (e: any) => {
+		document.onmousemove = (e: any) => {
 			let windowHeight = window.innerHeight;
 			let windowWidth = window.innerWidth;
 			let xValue = e.x;
@@ -47,9 +47,9 @@ const Hero = () => {
 
 			document.getElementById("intro")!.animate(
 				{
-					transform: `translate(${mousePosX * 4}% , ${mousePosY * 5}%)`,
+					transform: `translate(${mousePosX * 10}% , ${mousePosY * 10}%)`,
 				},
-				{ duration: 200 }
+				{ duration: 200, fill: "forwards" }
 			);
 		};
 	}, []);
