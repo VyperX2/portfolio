@@ -26,6 +26,14 @@
 		--input: 220 13% 91%;
 		--ring: 262.1 83.3% 57.8%;
 		--radius: 0.5rem;
+		--gradient: radial-gradient(
+			circle,
+			#ffffff,
+			#edeaf8,
+			#dcd5f0,
+			#cbc0e7,
+			#bcabde
+		);
 	}
 
 	.dark {
@@ -48,6 +56,14 @@
 		--border: 215 27.9% 16.9%;
 		--input: 215 27.9% 16.9%;
 		--ring: 263.4 70% 50.4%;
+		--gradient: radial-gradient(
+			circle,
+			#030712,
+			#050a1d,
+			#090b26,
+			#0e0c2e,
+			#150b36
+		);
 	}
 }
 
@@ -120,4 +136,15 @@
 
 h1 {
 	font-family: monospace;
+}
+
+.gradient1 {
+	background-image: radial-gradient(
+		circle,
+		#ffffff,
+		#edeaf8,
+		#dcd5f0,
+		#cbc0e7,
+		#bcabde
+	);
 }

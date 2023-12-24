@@ -64,7 +64,7 @@ const Navbar = () => {
 			</div>
 
 			{/* DESKTOP VIEW */}
-			<div className="md:flex space-x-8 cursor-pointer hidden anim1">
+			<div className="md:flex space-x-8  hidden anim1">
 				{navItems.map((item) => (
 					<a
 						key={item.href}
