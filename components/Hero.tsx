@@ -35,6 +35,23 @@ const Hero = () => {
 		h1s.forEach((h1) => {
 			h1.addEventListener("mouseover", handleMouseOver);
 		});
+
+		window.onmousemove = (e: any) => {
+			let windowHeight = window.innerHeight;
+			let windowWidth = window.innerWidth;
+			let xValue = e.x;
+			let yValue = e.y;
+
+			let mousePosX = -1 + (xValue / windowWidth) * 2;
+			let mousePosY = -(1 - (yValue / windowHeight) * 2);
+
+			document.getElementById("intro")!.animate(
+				{
+					transform: `translate(${mousePosX * 4}% , ${mousePosY * 5}%)`,
+				},
+				{ duration: 200 }
+			);
+		};
 	}, []);
 
 	useGSAP(
@@ -44,10 +61,14 @@ const Hero = () => {
 		{ scope: container }
 	);
 	return (
-		<section className="flex lg:flex-row flex-col items-center justify-center gap-y-12 w-full h-[90vh] ">
+		<section
+			id="hero"
+			className="flex lg:flex-row flex-col items-center justify-center gap-y-12 w-full h-[90vh] "
+		>
 			<div
 				ref={container}
-				className=" text-center leading-none overflow-hidden"
+				id="intro"
+				className=" text-center leading-none absolute"
 			>
 				<h3 className="2xl:text-4xl lg:text-2xl text-2xl text-muted-foreground font-semibold anim2">
 					Hi, My Name is
@@ -70,17 +91,6 @@ const Hero = () => {
 					reality
 				</p>
 			</div>
-			{/* <div className="flex-1 w-full ">
-				<AspectRatio ratio={3 / 2}>
-					<Image
-						src="/illustration.png"
-						layout="fill"
-						alt="Illustration"
-						draggable="false"
-						className="object-cover"
-					/>
-				</AspectRatio>
-			</div> */}
 		</section>
 	);
 };
