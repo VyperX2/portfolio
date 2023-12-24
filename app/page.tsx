@@ -1,11 +1,11 @@
 import Hero from "@/components/Hero";
 import AnimatedCursor from "react-animated-cursor";
-// import Blob from "@/components/Blob";
+import Blob from "@/components/Blob";
 // TODO FIX BLOB COMPONENT
 export default function Home() {
 	return (
-		<main className="container flex flex-col mt-20 overflow-hidden ">
-			{/* <Blob /> */}
+		<main className="container flex flex-col mt-20 ">
+			{<Blob />}
 			<Hero />
 			<AnimatedCursor
 				innerSize={8}

@@ -19,8 +19,8 @@ const Blob = () => {
 
 	return (
 		<>
-			<div id="blob"></div>
-			<div id="blur"></div>
+			<div id="blob" className="hidden lg:block"></div>
+			<div id="blur" className="hidden lg:block"></div>
 		</>
 	);
 };

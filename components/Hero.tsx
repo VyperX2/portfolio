@@ -70,7 +70,7 @@ const Hero = () => {
 			<div
 				ref={container}
 				id="intro"
-				className=" text-center leading-none absolute "
+				className=" mx-auto text-center leading-none absolute "
 			>
 				<h3 className="2xl:text-4xl lg:text-2xl text-2xl text-muted-foreground font-semibold anim2">
 					Hi, My Name is
@@ -87,7 +87,7 @@ const Hero = () => {
 				>
 					AHMED
 				</h1>
-				<p className="text-muted-foreground font-semibold anim2 leading-snug">
+				<p className="text-muted-foreground font-semibold anim2 leading-snug text-center w-[100vw]">
 					I am a passionate front end web developer{" "}
 					<br className="md:block hidden" />I will help turn your ideas into
 					reality

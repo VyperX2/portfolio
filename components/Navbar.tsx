@@ -3,7 +3,6 @@ import ThemeToggle from "./ThemeToggle";
 import { navItems } from "@/utils/constants";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { useRef } from "react";
-import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { Anim1 } from "@/animations/animation";
 
@@ -19,7 +18,7 @@ const Navbar = () => {
 	return (
 		<nav
 			ref={container}
-			className="container flex justify-between items-center text-primary font-semibold fixed left-0 right-0 top-0 pt-6 bg-transparent backdrop:blur-sm overflow-hidden"
+			className="container flex justify-between items-center text-primary font-semibold fixed left-0 right-0 top-0 pt-6 bg-transparent "
 		>
 			{
 				// GITHUB LOGO
