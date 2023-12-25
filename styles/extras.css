@@ -46,7 +46,6 @@ h1 {
 	position: absolute;
 	height: 200px;
 	aspect-ratio: 1;
-	background: white;
 	border-radius: 50%;
 	left: 50%;
 	top: 50%;
@@ -55,30 +54,17 @@ h1 {
 	/* background: linear-gradient(to right, #ffeb3b, #9c27b0); */
 	/* background: linear-gradient(to right, #1a237e, #0d47a1); */
 	background: linear-gradient(to right, #9c27b0, #673ab7);
-	animation: rotate 20s infinite;
+	filter: blur(200px);
+	animation: scale 20s infinite;
 	z-index: -2;
 }
 
-#blur {
-	height: 100vh;
-	width: 100vw;
-	left: 50%;
-	top: 42%;
-	translate: -50% -50%;
-	position: absolute;
-	z-index: -1;
-	backdrop-filter: blur(200px);
-}
-
-@keyframes rotate {
+@keyframes scale {
 	from {
-		rotate: 0deg;
+		scale: 0.25;
 	}
-	/* 50% {
-		scale: 1 1.5;
-	} */
 	to {
-		rotate: 360deg;
+		scale: 1;
 	}
 }
 

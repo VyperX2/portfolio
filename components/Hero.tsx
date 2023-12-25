@@ -89,7 +89,7 @@ const Hero = () => {
 				</h1>
 				<p className="text-muted-foreground font-semibold anim2 leading-snug text-center w-[100vw]">
 					I am a passionate front end web developer{" "}
-					<br className="md:block hidden" />I will help turn your ideas into
+					<br className="md:block " />I will help turn your ideas into
 					reality
 				</p>
 			</div>

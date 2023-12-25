@@ -40,7 +40,7 @@ const Navbar = () => {
 			</a> */
 			}
 			<div className="flex items-center gap-2 noselect anim1">
-				<div id="logo">
+				<div id="logo" className=" hover:rotate-90">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						height="32px"

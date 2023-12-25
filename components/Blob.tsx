@@ -17,12 +17,7 @@ const Blob = () => {
 		};
 	}, []);
 
-	return (
-		<>
-			<div id="blob" className="hidden lg:block"></div>
-			<div id="blur" className="hidden lg:block"></div>
-		</>
-	);
+	return <div id="blob" className="hidden lg:block" />;
 };
 
 export default Blob;
