@@ -22,11 +22,14 @@ export function Anim1() {
 }
 
 export function Anim2() {
-	const tl2 = gsap.timeline();
-	tl2.from(".anim3", {
+	gsap.from(".anim3", {
+		scrollTrigger: {
+			trigger: ".anim3",
+			start: "top 80%",
+		},
 		opacity: 0,
 		y: 100,
-		duration: 0.8,
+		duration: 0.55,
 		stagger: 0.3,
 	});
 }
