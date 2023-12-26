@@ -18,7 +18,7 @@ const Navbar = () => {
 	return (
 		<nav
 			ref={container}
-			className="container flex justify-between items-center text-primary font-semibold fixed left-0 right-0 top-0 pt-6 bg-transparent "
+			className="container flex justify-between items-center text-primary font-semibold fixed left-0 right-0 top-0 pt-6 bg-transparent z-10 "
 		>
 			{
 				// GITHUB LOGO
@@ -101,7 +101,7 @@ const Navbar = () => {
 							{navItems.map((item) => (
 								<a
 									key={item.href}
-									className="hover:opacity-60 hover:scale-110 text-lg font-semibold text-primary transition-all ease-in"
+									className="hover:opacity-60 hover:scale-110 text-lg font-semibold text-primary transition-all ease-in relative"
 									href={item.href}
 								>
 									{" "}

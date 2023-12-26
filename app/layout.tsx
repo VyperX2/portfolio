@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className="font-heading bg-gradient relative pb-96`">
+			<body className="font-heading bg-gradient relative pb-96">
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"
