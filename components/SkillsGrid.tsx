@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Autoplay from "embla-carousel-autoplay";
 import {
 	Card,
 	CardContent,
@@ -18,12 +19,22 @@ import { techArray } from "@/utils/constants";
 const SkillsGrid = () => {
 	return (
 		<div>
-			<Carousel className="w-full ">
+			<Carousel
+				plugins={[
+					Autoplay({
+						delay: 2000,
+					}),
+				]}
+				className="w-full "
+			>
 				<CarouselPrevious className=" border-primary/80 bg-primary/10 hover:bg-primary/5 transition-all hover:shadow-2xl hover:shadow-primary/20" />
 				<CarouselNext className="border-primary/80 bg-primary/10 hover:bg-primary/5 transition-all hover:shadow-2xl hover:shadow-primary/20" />
 				<CarouselContent>
 					{techArray.map((tech, index) => (
-						<CarouselItem className="basis-1/4" key={index}>
+						<CarouselItem
+							className="2xl:basis-1/4 lg:basis-1/3 md:basis-1/2 basis-full"
+							key={index}
+						>
 							<div className="p-1">
 								<Card className="border-primary/80 bg-primary/10 hover:bg-primary/5 transition-all hover:shadow-2xl hover:shadow-primary/20 ">
 									<CardContent className=" flex flex-col aspect-square items-center justify-between py-12">
