@@ -36,7 +36,7 @@ const techArray = [
 	},
 	{
 		title: "MongoDB",
-		src: "DeviconMongoDB.svg",
+		src: "DeviconMongodb.svg",
 	},
 	{
 		title: "Firebase",
@@ -48,7 +48,7 @@ const techArray = [
 	},
 	{
 		title: "VS Code",
-		src: "DeviconVsCode.svg",
+		src: "DeviconVscode.svg",
 	},
 ];
 
