@@ -25,7 +25,7 @@ const SkillsGrid = () => {
 						delay: 2000,
 					}),
 				]}
-				className="w-full "
+				className="w-full anim3"
 			>
 				<CarouselPrevious className=" border-primary/80 bg-primary/10 hover:bg-primary/5 transition-all hover:shadow-2xl hover:shadow-primary/20" />
 				<CarouselNext className="border-primary/80 bg-primary/10 hover:bg-primary/5 transition-all hover:shadow-2xl hover:shadow-primary/20" />
@@ -39,6 +39,7 @@ const SkillsGrid = () => {
 								<Card className="border-primary/80 bg-primary/10 hover:bg-primary/5 transition-all hover:shadow-2xl hover:shadow-primary/20 ">
 									<CardContent className=" flex flex-col aspect-square items-center justify-between py-12">
 										<Image
+											className="hover:rotate-[360deg] transition-all duration-300"
 											src={tech.src}
 											alt={tech.title}
 											width={120}
