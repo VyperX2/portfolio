@@ -78,3 +78,7 @@ h1 {
 #name {
 	font-family: "Style Script", cursive;
 }
+
+#nav {
+	backdrop-filter: blur(8px);
+}
