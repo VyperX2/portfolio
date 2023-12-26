@@ -39,6 +39,10 @@ const techArray = [
 		src: "DeviconMongoDB.svg",
 	},
 	{
+		title: "Firebase",
+		src: "DeviconFirebase.svg",
+	},
+	{
 		title: "Git",
 		src: "DeviconGit.svg",
 	},
