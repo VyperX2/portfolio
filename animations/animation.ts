@@ -32,4 +32,13 @@ export function Anim2() {
 		duration: 0.4,
 		stagger: 0.3,
 	});
+	gsap.from(".anim4", {
+		scrollTrigger: {
+			trigger: ".anim4",
+		},
+		opacity: 0,
+		y: 100,
+		duration: 0.4,
+		stagger: 0.3,
+	});
 }

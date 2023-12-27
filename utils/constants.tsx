@@ -34,14 +34,9 @@ const techArray = [
 		title: "Typescript",
 		src: "DeviconTypescript.svg",
 	},
-	{
-		title: "MongoDB",
-		src: "DeviconMongodb.svg",
-	},
-	{
-		title: "Firebase",
-		src: "DeviconFirebase.svg",
-	},
+];
+
+const techTools = [
 	{
 		title: "Git",
 		src: "DeviconGit.svg",
@@ -50,6 +45,17 @@ const techArray = [
 		title: "VS Code",
 		src: "DeviconVscode.svg",
 	},
+	{
+		title: "Firebase",
+		src: "DeviconFirebase.svg",
+	},
+	{
+		title: "MongoDB",
+		src: "DeviconMongodb.svg",
+	},
+	{
+		title: "Github",
+		src: "DeviconGithub.svg",
+	},
 ];
-
-export { navItems, techArray };
+export { navItems, techArray, techTools };
