@@ -17,17 +17,18 @@ const Navbar = () => {
 
 	return (
 		<nav
-      id="nav"
+			id="nav"
 			ref={container}
 			className=" backdrop-blur-md container flex justify-between items-center text-primary font-semibold fixed left-0 right-0 top-0 pt-6 z-10 pb-4 "
 		>
 			<div className="flex items-center gap-2 noselect anim1">
-				<div id="logo" className=" hover:rotate-90">
+				<div id="logo" className="">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						height="32px"
 						width="32px"
 						viewBox="0 0 32 32"
+						className="hover:rotate-[360deg] duration-300 transition-all"
 					>
 						<path d="M11 2H2v9h2V4h7V2z" fill="currentColor"></path>
 						<path d="M2 21v9h9v-2H4v-7H2z" fill="currentColor"></path>

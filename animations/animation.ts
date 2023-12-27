@@ -29,7 +29,7 @@ export function Anim2() {
 		},
 		opacity: 0,
 		y: 100,
-		duration: 0.55,
+		duration: 0.4,
 		stagger: 0.3,
 	});
 }
