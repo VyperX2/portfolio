@@ -42,3 +42,41 @@ export function Anim2() {
 		stagger: 0.3,
 	});
 }
+export function Anim3() {
+	gsap.from(".anim5", {
+		scrollTrigger: {
+			trigger: ".anim5",
+			start: "top 80%",
+		},
+		opacity: 0,
+		y: 100,
+		duration: 0.4,
+		stagger: 0.3,
+	});
+}
+export function Anim4() {
+	gsap.from(".anim6", {
+		y: 100,
+		opacity: 0,
+		scrollTrigger: {
+			trigger: ".anim6",
+			start: "top 90%",
+		},
+		duration: 0.4,
+		// stagger: 0.3,
+	});
+}
+export function Anim5() {
+	gsap.set(".anim7", {
+		opacity: 0,
+	});
+	gsap.to(".anim7", {
+		opacity: 1,
+		scrollTrigger: {
+			trigger: ".anim7",
+			start: "top 90%",
+		},
+		duration: 0.4,
+		// stagger: 0.3,
+	});
+}

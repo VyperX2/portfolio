@@ -20,7 +20,7 @@ export default function Home() {
 				outerStyle={{
 					border: "3px solid rgb(124, 58 , 237)",
 				}}
-				clickables={["a", "button"]}
+				clickables={["a", "button", ".projectimg"]}
 			/>
 			<Hero />
 			<Skills />
