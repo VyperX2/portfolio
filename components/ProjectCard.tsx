@@ -11,6 +11,7 @@ interface CardProps {
 	src: string;
 	technologies: string[];
 	site: string;
+	github: string;
 }
 const ProjectCard = ({
 	desc,
@@ -19,6 +20,7 @@ const ProjectCard = ({
 	title,
 	i,
 	site,
+	github,
 }: CardProps) => {
 	let container = useRef(null);
 	let cardContainer = useRef(null);
@@ -76,10 +78,22 @@ const ProjectCard = ({
 					<h2 className="2xl:text-3xl lg:text-2xl text-2xl text-primary font-semibold anim4">
 						{title}
 					</h2>
-					<p className="text-muted-foreground font-semibold w-[85%]">{desc}</p>
-					<div className="flex items-center mt-auto">
-						<button className="">Visit Site</button>
-						<button>View Code</button>
+					<p className="text-muted-foreground font-semibold sm:w-[85%]">{desc}</p>
+					<div className="flex items-center gap-4 lg:mt-auto mt-6">
+						<a
+							className=" border border-primary text-white px-4 py-2 bg-primary rounded-lg hover:rotate-[-18deg] transition-all"
+							href={site}
+							target="_blank"
+						>
+							Visit Site
+						</a>
+						<a
+							className=" border border-primary px-4 py-2 bg-transparent  rounded-lg hover:rotate-[18deg] transition-all"
+							href={github}
+							target="_blank"
+						>
+							View Code
+						</a>
 					</div>
 				</div>
 			</div>

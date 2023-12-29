@@ -66,6 +66,7 @@ const projectsData = [
 		src: "cinemania.png",
 		technologies: [],
 		site: "https://cinemania-eight.vercel.app/",
+		github: "https://github.com/VyperX2/Cinemania",
 	},
 	{
 		title: "Youtube Clone",
@@ -73,6 +74,7 @@ const projectsData = [
 		src: "yt-clone.png",
 		technologies: [],
 		site: "https://658dde84bae3c02b938ff5bc--genuine-marzipan-9acc5c.netlify.app/",
+		github: "https://github.com/VyperX2/yt-clone-react",
 	},
 	{
 		title: "ShoeSphere",
@@ -80,6 +82,7 @@ const projectsData = [
 		src: "shoe.png",
 		technologies: [],
 		site: "https://e-commerce-website-gold-six.vercel.app/",
+		github: "https://github.com/VyperX2/e-commerce-website",
 	},
 	// {
 	// 	title: "Cinemania",
