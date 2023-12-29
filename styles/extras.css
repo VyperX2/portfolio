@@ -57,24 +57,3 @@ h1 {
 	backdrop-filter: blur(8px);
 }
 
-.card:hover::before {
-  opacity: 1;
-}
-
-.card::before {
-	background: radial-gradient(
-		800px circle at var(--mouse-x) var(--mouse-y),
-		rgba(255, 255, 255, 0.06),
-		transparent 40%
-	);
-	border-radius: inherit;
-	content: "";
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	z-index: 0;
-	top: 0;
-	left: 0;
-  opacity: 0;
-  transition: opacity 500ms;
-}

@@ -6,6 +6,7 @@
 
 @layer base {
 	:root {
+		--card-gradient: #ffffff;
 		--background: 0 0% 100%;
 		--foreground: 224 71.4% 4.1%;
 		--card: 0 0% 100%;
@@ -37,6 +38,7 @@
 	}
 
 	.dark {
+		--card-gradient: #030712;
 		--background: 224 71.4% 4.1%;
 		--foreground: 210 20% 98%;
 		--card: 224 71.4% 4.1%;
@@ -76,4 +78,28 @@
 		#cbc0e7,
 		#bcabde
 	);
+}
+
+.card:hover::before {
+	opacity: 1;
+}
+
+.card::before {
+	background: radial-gradient(
+		600px circle at var(--mouse-x) var(--mouse-y),
+		var(--card-gradient),
+		transparent 40%
+	);
+
+	/* rgba(255, 255, 255, 0.06) */
+	border-radius: inherit;
+	content: "";
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 500ms;
 }

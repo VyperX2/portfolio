@@ -51,7 +51,7 @@ const Navbar = () => {
 					<a
 						key={item.href}
 						className="hover:opacity-60 hover:scale-110  transition-all ease-in"
-						href={item.href}
+						href={`#${item.href}`}
 					>
 						{" "}
 						{item.title}{" "}
