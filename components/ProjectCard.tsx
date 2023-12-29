@@ -35,7 +35,7 @@ const ProjectCard = ({
 		};
 
 		for (const card of document.querySelectorAll(".card")) {
-			card.onmousemove = (e) => handleMouseMove(e);
+			card.onmousemove = (e: any) => handleMouseMove(e);
 		}
 	}, []);
 	useGSAP(
