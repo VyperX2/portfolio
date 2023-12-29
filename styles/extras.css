@@ -42,32 +42,6 @@ h1 {
 	font-family: monospace;
 }
 
-#blob {
-	position: absolute;
-	height: 200px;
-	aspect-ratio: 1;
-	border-radius: 50%;
-	left: 50%;
-	top: 50%;
-	translate: -50% -50%;
-	/* background: linear-gradient(to right, #667eea, #764ba2); */
-	/* background: linear-gradient(to right, #ffeb3b, #9c27b0); */
-	/* background: linear-gradient(to right, #1a237e, #0d47a1); */
-	background: linear-gradient(to right, #9c27b0, #673ab7);
-	filter: blur(200px);
-	animation: scale 20s infinite;
-	z-index: -2;
-}
-
-@keyframes scale {
-	from {
-		scale: 0.25;
-	}
-	to {
-		scale: 1;
-	}
-}
-
 #navbar {
 	transition-property: all;
 	transition-timing-function: cubic-bezier(0.39, 0.15, 0.91, 0.74);
@@ -81,4 +55,26 @@ h1 {
 
 #nav {
 	backdrop-filter: blur(8px);
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card::before {
+	background: radial-gradient(
+		800px circle at var(--mouse-x) var(--mouse-y),
+		rgba(255, 255, 255, 0.06),
+		transparent 40%
+	);
+	border-radius: inherit;
+	content: "";
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+  opacity: 0;
+  transition: opacity 500ms;
 }
