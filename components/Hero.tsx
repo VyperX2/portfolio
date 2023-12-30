@@ -64,7 +64,7 @@ const Hero = () => {
 	return (
 		<section
 			id="home"
-			className="flex lg:flex-row flex-col items-center justify-center gap-y-12 w-full h-[calc(90vh-15rem)] "
+			className="flex lg:flex-row flex-col items-center justify-center pt-56 gap-y-12 w-full h-[calc(90vh-15rem)] "
 		>
 			<div
 				ref={container}
