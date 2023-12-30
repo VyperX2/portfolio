@@ -49,11 +49,7 @@ export const Contact = () => {
 	};
 
 	return (
-		<section
-			ref={container}
-			id="contact"
-			className="flex flex-col  gap-8 mb-5"
-		>
+		<section ref={container} id="contact" className="flex flex-col  gap-8 mb-5">
 			<h1
 				className="2xl:text-5xl lg:text-4xl md:text-4xl text-3xl text-primary font-semibold w-fit inline-block mr-4 anim9"
 				data-value="Contact Me"
@@ -62,6 +58,7 @@ export const Contact = () => {
 			</h1>
 			<form className="flex flex-col gap-6 " ref={form} onSubmit={sendEmail}>
 				<input
+					required
 					value={name}
 					onChange={(e) => setName(e.target.value)}
 					type="text"
@@ -70,6 +67,7 @@ export const Contact = () => {
 					className="  py-4 rounded-lg px-4 border border-primary/50  bg-primary/20 placeholder:text-white outline-none anim9 focus-within:border-primary "
 				/>
 				<input
+					required
 					value={email}
 					onChange={(e) => setEmail(e.target.value)}
 					type="email"
@@ -78,6 +76,7 @@ export const Contact = () => {
 					className=" py-4 rounded-lg px-4 border border-primary/50  bg-primary/20 placeholder:text-white outline-none anim9 focus-within:border-primary"
 				/>
 				<textarea
+					required
 					value={message}
 					onChange={(e) => setMessage(e.target.value)}
 					name="message"
