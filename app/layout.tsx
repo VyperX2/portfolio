@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 export const metadata: Metadata = {
-	title: "Mateen",
+	title: "Mateen | Portfolio",
 	description: "Mateen's Web developer portfolio",
 };
 

@@ -41,7 +41,7 @@ const Navbar = () => {
 					</svg>
 				</div>
 				<h2 id="name" className=" text-2xl">
-					Mateen Ahmed
+					Mateen
 				</h2>
 			</div>
 

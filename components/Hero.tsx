@@ -80,12 +80,7 @@ const Hero = () => {
 				>
 					MATEEN
 				</h1>
-				<h1
-					data-value="AHMED"
-					className="2xl:text-5xl lg:text-4xl md:text-4xl text-3xl text-primary font-semibold inline-block anim2"
-				>
-					AHMED
-				</h1>
+				
 				<p className="text-muted-foreground font-semibold anim2 leading-snug text-center w-[100vw]">
 					I am a passionate front end web developer <br className="md:block " />
 					I will help turn your ideas into reality
