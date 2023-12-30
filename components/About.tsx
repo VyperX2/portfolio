@@ -1,31 +1,55 @@
+"use client";
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 const About = () => {
+	const container = useRef(null);
+	useGSAP(
+		() => {
+			gsap.from(".anim10", {
+				scrollTrigger: {
+					trigger: ".anim10",
+				},
+				opacity: 0,
+				y: 100,
+				duration: 0.4,
+				stagger: 0.3,
+			});
+		},
+		{ scope: container }
+	);
+
 	return (
-		<section id="about" className="flex flex-col  text-muted-foreground">
+		<section
+			ref={container}
+			id="about"
+			className="flex flex-col  text-muted-foreground"
+		>
 			<h1
-				className="2xl:text-5xl lg:text-4xl md:text-4xl text-3xl text-primary font-semibold inline-block mr-4 w-fit"
+				className="2xl:text-5xl lg:text-4xl md:text-4xl text-3xl text-primary font-semibold inline-block mr-4 w-fit anim10"
 				data-value="About Me"
 			>
 				About Me
 			</h1>
-			<p className=" text-lg sm:w-[80%]">
+			<p className=" text-lg sm:w-[80%] anim10">
 				Hello there! 👋 I'm{" "}
 				<span className="text-primary font-semibold">Mateen</span> , a
 				self-taught frontend web developer with a passion for crafting engaging
 				and user-friendly digital experiences.I've honed my front-end Skills to
 				create visually appealing and responsive websites.
 			</p>
-			<p className=" text-lg sm:w-[80%]">
+			<p className=" text-lg sm:w-[80%] anim10">
 				As a curious and self-driven developer, I love tackling challenges and
 				finding innovative solutions.I have developed a liking for learning new
 				technologies to solve the problems.
 			</p>
-			<p className="text-lg sm:w-[80%] mt-6">
+			<p className="text-lg sm:w-[80%] mt-6 anim10">
 				I'm always open to collaboration and new opportunities. Whether you have
 				a project in mind or just want to connect, feel free to reach out. Let's
 				build something amazing together!
 			</p>
 
-			<div className="mt-6 flex">
+			<div className="mt-6 flex anim10">
 				<a href="https://github.com/VyperX2" target="_blank">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
