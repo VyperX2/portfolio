@@ -36,7 +36,7 @@ const SkillsGrid = () => {
 							<div className="p-1">
 								<CardContainer className="border 2xl:max-w-[340px] md:max-w-[260px] max-w-[290px] rounded-lg border-primary/80 bg-primary/10 hover:bg-primary/5 transition-all hover:shadow-2xl hover:shadow-primary/20 ">
 									<CardBody className=" flex flex-col aspect-square items-center justify-between py-12">
-										<CardItem translateZ="60">
+										<CardItem translateZ="100">
 											<Image
 												className=""
 												src={tech.src}
@@ -82,7 +82,7 @@ const SkillsGrid = () => {
 							<div className="p-1">
 								<CardContainer className="border 2xl:max-w-[340px] md:max-w-[260px] max-w-[290px] rounded-lg border-primary/80 bg-primary/10 hover:bg-primary/5 transition-all hover:shadow-2xl hover:shadow-primary/20 ">
 									<CardBody className=" flex flex-col aspect-square items-center justify-between py-12">
-										<CardItem translateZ="60">
+										<CardItem translateZ="100">
 											<Image
 												className=""
 												src={tech.src}
