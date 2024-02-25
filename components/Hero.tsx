@@ -2,8 +2,11 @@
 import { useGSAP } from "@gsap/react";
 import { useEffect, useRef } from "react";
 import { Anim1 } from "@/animations/animation";
+import { useTheme } from "next-themes";
+import { SparklesCore } from "./ui/sparkles";
 
 const Hero = () => {
+	const { theme } = useTheme();
 	const container = useRef(null);
 	const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	function handleMouseOver(event: any) {
@@ -66,6 +69,18 @@ const Hero = () => {
 			id="home"
 			className="flex lg:flex-row flex-col items-center justify-center pt-56 gap-y-12 w-full h-[calc(90vh-15rem)] "
 		>
+			<div className="w-full absolute inset-0 h-screen">
+				<SparklesCore
+					id="tsparticlesfullpage"
+					background="transparent"
+					minSize={0.6}
+					maxSize={1.8}
+					particleDensity={10}
+					speed={10}
+					className="w-full h-full"
+					particleColor="#6d28d9"
+				/>
+			</div>
 			<div
 				ref={container}
 				id="intro"
