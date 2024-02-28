@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 
+// TODO: ADD 3D to ProjectImage
 interface CardProps {
 	i: number;
 	title: string;

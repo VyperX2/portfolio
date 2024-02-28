@@ -34,7 +34,7 @@ const SkillsGrid = () => {
 							key={index}
 						>
 							<div className="p-1">
-								<CardContainer className="border 2xl:max-w-[340px] md:max-w-[260px] max-w-[290px] rounded-lg border-primary/80 bg-primary/10 hover:bg-primary/5 transition-all hover:shadow-2xl hover:shadow-primary/20 ">
+								<CardContainer className="border 2xl:max-w-[340px] md:max-w-[260px] max-w-[260px] rounded-lg border-primary/80 bg-primary/10 hover:bg-primary/5 transition-all hover:shadow-2xl hover:shadow-primary/20 ">
 									<CardBody className=" flex flex-col aspect-square items-center justify-between py-12">
 										<CardItem translateZ="100">
 											<Image
@@ -80,7 +80,7 @@ const SkillsGrid = () => {
 							key={index}
 						>
 							<div className="p-1">
-								<CardContainer className="border 2xl:max-w-[340px] md:max-w-[260px] max-w-[290px] rounded-lg border-primary/80 bg-primary/10 hover:bg-primary/5 transition-all hover:shadow-2xl hover:shadow-primary/20 ">
+								<CardContainer className="border 2xl:max-w-[340px] md:max-w-[260px] max-w-[260px] rounded-lg border-primary/80 bg-primary/10 hover:bg-primary/5 transition-all hover:shadow-2xl hover:shadow-primary/20 ">
 									<CardBody className=" flex flex-col aspect-square items-center justify-between py-12">
 										<CardItem translateZ="100">
 											<Image
