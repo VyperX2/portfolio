@@ -90,6 +90,14 @@ const ProjectCard = ({
 							<p className="text-muted-foreground font-semibold sm:w-[85%]">
 								{desc}
 							</p>
+							<div className="mt-4 flex gap-3 flex-wrap">
+								{technologies.map((tech) => (
+									<div className=" bg-primary/50 px-2 py-1 rounded-md">
+										{" "}
+										{tech}
+									</div>
+								))}
+							</div>
 							<div className="flex items-center gap-4 lg:mt-auto mt-6">
 								<a
 									className=" border border-primary text-white px-4 py-2 bg-primary rounded-lg hover:rotate-[-18deg] transition-all"
