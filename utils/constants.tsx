@@ -65,7 +65,7 @@ const projectsData = [
 		desc: "Vortex is a fullstack social media website that allows you to upload images for others to see. It also contains authentication and other features such as the ability to like and save posts, follow other users and search for them.",
 		src: "vortex.png",
 		technologies: ["NextJs", "Typescript", "MongoDB"],
-		site: "https:vortex-neon.vercel.app",
+		site: "https://vortex-neon.vercel.app",
 		github: "https://github.com/VyperX2/vortex",
 	},
 	{
@@ -73,7 +73,7 @@ const projectsData = [
 		desc: "Cinemania, created using the TMDB API, is your gateway to the cinematic universe. Discover the latest releases, effortlessly search for your favorites, and delve into comprehensive actor profiles. Immerse yourself in the world of movies with this dynamic and information-rich platform",
 		src: "cinemania.png",
 		technologies: ["NextJs", "Typescript", "TailwindCSS"],
-		site: "https://cinemania-vyperx2.netlify.app",
+		site: "https://cinemania-eight.vercel.app/",
 		github: "https://github.com/VyperX2/Cinemania",
 	},
 	{
